@@ -1,0 +1,47 @@
+
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(255, 165, 0, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(255, 165, 0, 0.7);
+    }
+  }
+
+  .glowing-frame {
+    animation: glow 3s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black; /* إضافة إطار أسود حول المستطيل */
+    box-sizing: border-box; /* ضمان أن يكون الإطار جزءًا من حجم المستطيل */
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .blink-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: blink 1.5s infinite;
+  }
+
+  /* تغيير لون العناوين إلى اللون الأسود */
+  a {
+    color: black;
+  }
