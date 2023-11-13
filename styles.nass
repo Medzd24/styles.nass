@@ -47,8 +47,3 @@
   }
 
 
-.rectangle {
-        border: 2px solid black;
-        padding: 8px; /* إضافة هامش داخلي للإطار */
-        margin: 10px; /* إضافة هامش خارجي للمستطيل */
-    }
